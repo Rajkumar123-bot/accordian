@@ -1,0 +1,35 @@
+<h2>Accodrian example</h2>
+
+<button class="accordion">Section 1</button>
+<div class="panel">
+  <p>Bring your skills and help transform the future of health.
+Collaborate with business partners to understand analytics needs, and use your big data skills to provide analytical solutions to internal clients..</p>
+</div>
+
+<button class="accordion">Section 2</button>
+<div class="panel">
+  <p>Bring your skills and help transform the future of health.
+Collaborate with business partners to understand analytics needs, and use your big data skills to provide analytical solutions to internal clients.</p>
+
+<button class="accordion">Section 3</button>
+<div class="panel">
+  <p>Bring your skills and help transform the future of health.
+Collaborate with business partners to understand analytics needs, and use your big data skills to provide analytical solutions to internal clients.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
